@@ -1,63 +1,125 @@
 <!--CSS-->
-1)What is a correct syntax for linking to an external stylesheet?
-<link rel='stylesheet' href='styles.css'>
-
-2){ fillintheblanks: "exercise_html_colors1.htm" },
-Use CSS to set the background color of the document (body) to yellow.
 <!DOCTYPE html>
 <html>
 <head>
   <style>
-      body
-      {
-          background-color:yellow;
+      a:link {
+          color: green;
+          background-color: transparent;
+          text-decoration: none;
+      }
+      a:visited {
+          color: pink;
+          background-color: transparent;
+          text-decoration: none;
+      }
+      a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+      }
+      a:active {
+          color: yellow;
+          background-color: transparent;
+          text-decoration: underline;
       }
   </style>
 </head>
 <body>
-<h1>My Home Page</h1>
+
+<h2>Link Colors</h2>
+
+<p>You can change the default colors of links</p>
+
+<a href="html_images.asp" target="_blank">HTML Images</a>
+
 </body>
 </html>
 
-3)Use CSS to set the font of the document to "courier".
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-      body {
-          font-family:courier;}
-  </style>
-</head>
 <body>
-<h1>My Home Page</h1>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+
 </body>
 </html>
 
-4)Use CSS to set the text color of the document to red.
 <!DOCTYPE html>
 <html>
-<head>
-  <style>
-      body {color:red;}
-  </style>
-</head>
 <body>
-<h1>My Home Page</h1>
-</body>
-</html>
 
-5)Use CSS to make a yellow, 1 pixel thick, border around all paragraphs.
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
-      p
-      {border: 1px solid yellow;}
-  </style>
-</head>
-<body>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
-<p>This is a paragraph.</p>
+<p>Locked in a frame? <a href="https://www.w3schools.com/html/" target="_top">Click here!</a></p>
+
 </body>
 </html>
