@@ -1,40 +1,33 @@
 
 * {
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
-    background: #f2f4f7;
+    background: rgb(242, 244, 247);
 }
 
 .container {
-    padding: 10vh 37vh;
+    padding: 80px;
 }
-
-.left-holder p {
-    font-size: 28px;
-    line-height: 32px;
-}
-
-.left-holder h1 {
-    font-size: 55px;
-    color: #0866ff;
-    font-weight: 700;
-    padding-bottom: 20px;
-}
-
 .body-holder {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 112px;
-    padding-top: 72px;
+    padding-bottom: 110px;
+    padding-top: 75px;
 }
 
+.left-holder p {
+    font-size: 30px;
+    line-height: 35px;
+}
+
+
 .left-holder {
-    width: 580px;
+    width: 600px;
     padding-top: 62px;
 }
 
@@ -42,59 +35,45 @@ body {
     text-align: center;
     padding: 20px;
     padding-top: 5px;
-    padding-bottom: 0px;
-    border-radius: 10px;
-    width: 55vh;
+    width: 400px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
-    position: relative;
     background: white;
-    margin-right: 20px;
+    border-radius: 10px;
 }
 
 .right-holder input {
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #dddfe2;
-    width: 100%;
-    font-size: 16px;
+    padding: 17px;
+    border:2px solid rgba(106, 98, 98, 0.5);
+    width: 350px;
+    font-size: 15px;
 }
 
 .mb-3 {
-    padding: 7px 0;
+    padding: 7px ;
 }
 
 .btn {
     padding: 10px;
-    width: 100%;
-    border-radius: 5px;
+    /*width: 350px;*/
     border: none;
     background-color: #0866ff;
-    font-weight: 700;
+    font-weight: 100;
     font-size: 20px;
-    cursor: pointer;
     color: white;
 }
 
-.mb-3 p {
+.mb-3 {
     font-size: 14px;
     padding-top: 10px;
-    cursor: pointer;
-    color: #0866ff;
+    color: #000712;
     font-weight: 500;
 }
-
-.mb-3 p:hover {
-    text-decoration: underline;
-}
-
 .btn2 {
     width: 67%;
     background-color: #42b72a;
     font-weight: 700;
-    cursor: pointer;
     color: white;
     border: none;
-    border-radius: 6px;
     font-size: 17px;
     line-height: 48px;
     padding: 0 16px;
@@ -111,50 +90,31 @@ body {
     font-size: 14px;
     text-align: center;
     padding-top: 20px;
-    font-weight: normal;
     position: absolute;
 }
 
 .right-p span {
     font-weight: bold;
-    cursor: pointer;
 
 }
-
-.right-p span:hover {
-    text-decoration: underline;
-}
-
 .footer p {
     font-size: 12px;
-    cursor: pointer;
     color: #8a8d91;
-}
-
-.footer p:hover {
-    text-decoration: underline;
-}
-
-.footer-holder {
-    display: flex;
-    gap: 10px;
-    align-items: center;
 }
 
 .btnfoot {
     padding: 2px 9px;
     font-weight: 700;
-    cursor: pointer;
     border: 1px solid #dddfe2;
 }
 
 .footer-bottom {
     font-size: 12px;
-    cursor: pointer;
     align-items: center;
     line-height: 20px;
     word-spacing: 5px;
     color: #8a8d91;
+    display: flex;
 }
 
 .footer hr {
@@ -186,9 +146,6 @@ footer {
     align-items: start;
 }
 
-.left-holder {
-    position: relative;
-}
 
 .left-holder p {
     margin-top: 75px;

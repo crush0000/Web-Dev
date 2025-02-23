@@ -42,9 +42,10 @@
 
 .content{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 7vh;
+
 }
 
 .iphone, .iphone2{
@@ -80,7 +81,7 @@
 }
 .right1{
     border: 1px solid silver;
-    padding: 0 25px;
+    padding: 0 25px; 
 }
 .right2{
     border: 1px solid silver;
@@ -111,11 +112,9 @@
     color: white;
     background-color: #0095F6;
     padding: 10px 15px;
-    border-radius: 10px;
     border: none;
     font-weight: 500;
     font-size: 14px;
-    cursor: pointer;
 }
 .btn{
     padding: 5px 15px;
@@ -129,7 +128,7 @@
 .anyWord p{
     position: relative;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 
 }
 .span2{
@@ -137,7 +136,6 @@
     width: 70px;
     background-color: silver;
     position: absolute;
-    z-index: 5;
     margin: -11px 0 0 -97px;
 }
 .span1{
@@ -145,25 +143,19 @@
     width: 70px;
     background-color: silver;
     position: absolute;
-    z-index: 5;
     margin: 7px 0 0 27px;
 }
 
 .span3 a{
     display: inline-block;
-    text-decoration: none;
     color: #0095F6;
     font-size: 18px;
     padding: 20px 0;
     font-weight: 600;
     text-align: center;
-    align-items: center;
     position: relative;
-    transition: 0.2s;
 }
-.span3 a:hover{
-    color: #d5c0a8;
-}
+
 .span3 i{
     position: absolute;
     margin: -1px 0 0 -23px;
@@ -175,33 +167,31 @@
     font-size: 18px;
     font-weight: 400;
 }
+.r
 
-.right-side h5:hover{
-    cursor: pointer;
-}
 
 .right2{
     font-size: 16px;
 }
-.right2 span{
+.right2 span {
     color: #0095F6;
     cursor: pointer;
 }
 .lastimg :first-child{
     width: 140px;
     height: 40px;
-    cursor: pointer;
+
 }
 .lastimg :last-child{
     width: 140px;
     height: 40px;
-    cursor: pointer;
 }
 .lastimg{
     display: flex;
     padding: 20px;
-    gap: 20px;
+
 }
+
 
 .right3{
     padding: 20px;
@@ -213,15 +203,17 @@
 }
 
 .title{
-    width: 175px;
-    height: 51px;
+    display: flex;
+    /*width: 175px;*/
+    /*height: 51px;*/
     position: relative;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
+    justify-content: center;
 }
 
 .title img {
     width: 175px;
     height: 60px;
-    position: absolute;
-    margin: -60px 0px 0px -40px;
+    /*position: absolute;*/
+    /*margin: -60px 0px 0px -40px*/
 }

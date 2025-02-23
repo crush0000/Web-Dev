@@ -9,7 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/jasmine": "^5.1.6",
+    "@types/jest": "^29.5.14",
+    "@types/mocha": "^10.0.10",
     "prettier": "^3.3.1",
     "vite": "^5.1.6"
+  },
+  "dependencies": {
+    "@angular/forms": "^19.1.6",
+    "@angular/localize": "^19.1.6",
+    "@angular/platform-browser-dynamic": "^19.1.6",
+    "@angular/router": "^19.1.6"
   }
 }

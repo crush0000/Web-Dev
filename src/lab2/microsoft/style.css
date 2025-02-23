@@ -41,7 +41,6 @@ header {
     display: flex;
     gap: 20px;
     font-size: 13px;
-    list-style: none;
     width: 100%;
     cursor: pointer;
 }
@@ -121,20 +120,20 @@ header {
     font-weight: 450;
 }
 .button{
-    padding: 20px;
+    padding: 100px;
 }
 .button button{
     padding: 10px 20px;
     background-color: #0062d2;
     color: white;
-    border: none;
+    border: 1px #0062d2 solid;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s;
 }
 .button button:hover{
-    background-color: #005a99;
+    background-color: #526826;
 }
 /*LIST*/
 .list-holder ul{
@@ -199,4 +198,10 @@ header {
 }
 .overlay .btn:hover {
     background-color: #005a99;
+}
+.button{
+    padding-bottom: 110px;
+    padding-top: 1000px;
+    padding: 20px;
+    justify-content: space-around;
 }
