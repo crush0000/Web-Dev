@@ -29,15 +29,15 @@ import { ViewCategoriesComponent } from './view-categories/view-categories.compo
       { path: 'view-categories', component: ViewCategoriesComponent },
     ]),
     AppComponent,
+    CartComponent,
     TopBarComponent,
     ProductListComponent,
-    ProductDetailsComponent,
     ProductAlertsComponent,
-    CartComponent,
+    ProductDetailsComponent,
     ShippingComponent,
     ViewCategoriesComponent,
   ],
   declarations: [],
-  // bootstrap: [AppComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule {}

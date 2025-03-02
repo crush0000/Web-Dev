@@ -1,8 +1,8 @@
 <div class="search-bar">
-  <label for="search">Search:</label>
-  <input type="text" id="search" [(ngModel)]="searchInput"/>
+  <label for="search">Search by Product Name:</label>
+  <input type="text" id="search" [(ngModel)]="searchInput" />
 </div>
-
+<app-view-categories></app-view-categories>
 <div class="product-container">
   <div *ngFor="let product of filteredProducts" class="product-card">
     <div *ngFor="let image of product.img; let i = index">
@@ -48,12 +48,18 @@
         {{ product.name }}
       </a>
     </h3>
-    <p *ngIf="product.description">
+    <p *ngIf="product.description" class="product-description">
       <span>Description: </span>{{ product.description }}
     </p>
     <p *ngIf="product.price" class="price">
       <span>{{ product.price }} </span> ₸
     </p>
+
+    <ngb-rating
+      [max]="5"
+      [(rate)]="product.rating"
+      [readonly]="false"
+    ></ngb-rating>
     <div class="button-container button-row">
       <button type="button" (click)="share(product.name, product.link)">
         Share with WhatsApp
@@ -61,7 +67,16 @@
       <button type="button" (click)="sharetg(product.name, product.link)">
         Share with Telegram
       </button>
-
+      <app-product-alerts [product]="product" (notify)="onNotify()">
+      </app-product-alerts>
+    </div>
+    <div class="button-sort">
+      <button class="likebtn" type="button" (click)="like(product)">
+        I like this!: {{ product.likes }}
+      </button>
+      <button type="button" class="deletebtn" (click)="delete(product)">
+        Delete
+      </button>
     </div>
   </div>
 </div>

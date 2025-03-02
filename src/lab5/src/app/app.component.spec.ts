@@ -17,7 +17,7 @@
 //   it(`should have the 'lab5' title`, () => {
 //     const fixture = TestBed.createComponent(AppComponent);
 //     const app = fixture.componentInstance;
-//     expect(app.title).toEqual('lab5');
+//     expect(app.title).toEqual('lab4');
 //   });
 //
 //   it('should render title', () => {

@@ -325,3 +325,4 @@ export const products = [
     currentImageIndex: 0,
   },
 ];
+

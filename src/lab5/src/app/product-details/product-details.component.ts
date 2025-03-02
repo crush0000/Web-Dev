@@ -3,27 +3,24 @@ import { ActivatedRoute } from '@angular/router';
 
 import { CartService } from '../cart.service';
 import { Product, products } from '../products';
-import { CurrencyPipe, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-product-details',
+
+
   templateUrl: './product-details.component.html',
-  imports: [CurrencyPipe, NgIf],
-  styleUrl: './product-details.component.css',
+  styleUrl: './product-details.component.css'
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProductDetailsComponent implements OnInit  {
   product: Product | undefined;
   constructor(
     private route: ActivatedRoute,
-    private cartService: CartService,
-  ) {}
+    private cartService: CartService
+  ) { }
   ngOnInit() {
     const routeParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routeParams.get('productId'));
-
-    this.product = products.find(
-      (product) => product.id === productIdFromRoute,
-    );
+    this.product = products.find(product => product.id === productIdFromRoute);
   }
 
   addToCart(product: Product) {

@@ -2,28 +2,28 @@ import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 import { CartService } from '../cart.service';
-import { CurrencyPipe, NgForOf } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
-  imports: [NgForOf, CurrencyPipe, ReactiveFormsModule, RouterLink],
+  imports: [RouterLink, CurrencyPipe, ReactiveFormsModule],
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent {
-  // @ts-ignore
+
   items = this.cartService.getItems();
 
-  // @ts-ignore
+
   checkoutForm = this.formBuilder.group({
     name: '',
     address: '',
   });
 
   constructor(
-    private cartService: CartService,
-    private formBuilder: FormBuilder,
+    public cartService: CartService,
+    public formBuilder: FormBuilder,
   ) {}
 
   onSubmit(): void {
