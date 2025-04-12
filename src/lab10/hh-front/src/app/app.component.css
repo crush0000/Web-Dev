@@ -1,0 +1,66 @@
+/* app.component.css */
+
+/* Reset + base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  /* Company List */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Vacancies Section */
+  .vacancies {
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  }
+  
+  .vacancies li {
+    background: #fafafa;
+    border-left: 4px solid #3498db;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+  
+    li {
+      padding: 0.8rem;
+    }
+  
+    .vacancies {
+      padding: 1rem;
+    }
+  }
+  
